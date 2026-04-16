@@ -17,7 +17,9 @@ const pages: NavItem[] = [
 const Navbar = () => {
     return(
         <nav className='inline-flex'>
-            <img src = {Image} alt = "logo"/>
+            <Link to={"/"}>
+                <img src = {Image} alt = "logo"/>
+            </Link>
             <ul className='inline-flex m-auto'>
                 {pages.map((page) => (
                     <li key={page.path}>

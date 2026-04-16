@@ -1,6 +1,19 @@
+import ProjectBox from "../../components/Projects/ProjectBox"
+import ProjectLine from "../../components/Projects/ProjectLine"
+
+const projectExample = {
+    projectName : "ok",
+    description: "ok",
+    url: "https://google.com"
+}
+
 const Projects = () => {
     return (
-        <div></div>
+        <div>
+            <ProjectLine/>
+            <ProjectBox {...projectExample}/>
+            THis is projects page
+        </div>
     )
 }
 
